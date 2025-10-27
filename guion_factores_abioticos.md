@@ -25,7 +25,13 @@
 
 Los objetivos de aprendizaje anteriores se materializan en el siguiente objetivo operativo. Es decir, tienes que hacer esto:
 
-> Generar una tabla en la que a cada ecosistema de Sierra Nevada se le asignen valores promedio de: precipitación actual, temperatura actual, precipitación prevista en el futuro, temperatura prevista en el futuro y altitud
+> Generar una tabla en la que a cada ecosistema de Sierra Nevada se le asignen valores promedio de: precipitación actual, temperatura actual, precipitación prevista en el futuro, temperatura prevista en el futuro y altitud. Esta tabla puede servirte para:
+>
+> + Conocer con detalle las condiciones climáticas que hay en los lugares en los que vive tu ecosistema.
+> + Conocer cómo cambiarán esas condiciones climáticas.
+> + Comparar tanto las condiciones climáticas del presente como las del futuro en los distintos tipos de ecosistema. Contextualizar las de tu ecosistema. ¿hace más o menos frío en mi ecosistema que en los demás?, ¿cómo de variables son las condiciones ambientales en mi ecosistema?, ¿cambia el clima más intensamente en mi ecosistema que en otros?
+>
+> Además, también se puede generar un mapa de las condiciones abióticas solo en los polígonos de tu ecosistema. Esto nos ayudará a entender cómo cambian las condiciones ambientales en las distintas localidades donde vive el ecosistema en cuestión.
 
 
 
@@ -45,17 +51,17 @@ Las condiciones ambientales no actúan de la misma forma sobre los ecosistemas. 
 
 El tonel de la figura almacenará tanta agua como lo permita la balda más corta. Siguiendo la analogía, un ecosistema funcionará al ritmo que le permita el condicionante abiótico que sea más limitante.
 
-En nuestra zona de estudio los limitantes varían en función de la altura. Con este ejercicio tendrás que identificar el contexto abiótico de cada ecosistema y también interpretar qué variable ambiental puede estar limitando en cada caso.
+En nuestra zona de estudio los limitantes varían en función de la altura. Con este ejercicio tendrás que identificar el contexto abiótico de cada ecosistema y también interpretar qué variable ambiental puede estar limitando en cada caso. Además, debes tener en cuenta que las condiciones climáticas están cambiando. Es decir, el tamaño de las duelas del tonel están cambiando de tamaño.
 
 
 
 ## Flujo de trabajo
 
-A continuación se describen los pasos que hay que dar para generar mapas de distribución de las especies de interés. Describiré con menos detalle las cuestiones que ya habéis visto en la asignatura de SIG:
+A continuación se describen los pasos que hay que dar para generar mapas de distribución de las especies de interés. Describiré con menos detalle las cuestiones que ya habéis visto en la asignatura de SIG. Todo lo descrito aquí se puede hacer también con R.
 
-### 1. Cargar en QGIS los datos de presencia y consultar por especie
+### 1. Cargar en QGIS o en R los datos de las variables abióticas
 
-+ **1.1** D
++ **1.1** Aquí tienes una capa mostrando la temperatura 
 
 
 
