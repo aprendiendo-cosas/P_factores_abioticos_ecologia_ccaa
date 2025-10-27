@@ -63,6 +63,7 @@ A continuación se describen los pasos que hay que dar para generar mapas de dis
 
 + **1.1** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/precip_media_actual.tif) tienes una capa mostrando el promedio de la precipitación total en cada píxel de Sierra Nevada en unas condiciones climáticas históricas. Esta información procede de [este](https://figshare.com/articles/dataset/Spatial_distribution_of_annual_and_seasonal_precipitation_mm_in_Sierra_Nevada_and_surroundings_with_the_accumulated_means_resulting_from_interpolation_raster_format_/14208392/2) producto generado por el [Observatorio de seguimiento del cambio global en Sierra Nevada](https://obsnev.es/).  
 + **1.2.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/precip_media_70_00.tif) puedes descargar una capa que contiene datos del promedio de la precipitación total prevista para Sierra Nevada en la década de 2070 a 2100. Esta información se ha generado a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM en el que se simulan las condiciones climáticas de futuro. 
++ **1.3** Esta capa muestra la temperatura promedio en cada píxel de Sierra Nevada en un escenario climático histórico. 
 
 
 
