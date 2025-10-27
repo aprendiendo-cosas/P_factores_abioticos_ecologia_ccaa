@@ -12,28 +12,32 @@
 
 
 
-
-
-
-
 ## Objetivos
 
 - Disciplinares para la asignatura de ecología:
-  - 
+  - Comprender en qué medida las condiciones abióticas (altitud, clima, orientación, etc.) condicionan la estructura y funcionamiento de los ecosistemas.
+  - Comparar la estructura de los ecosistemas estudiados con las condiciones ambientales que imperan en las zonas en las que están presentes.
+  - Entender cómo el cambio en las condiciones climáticas puede afectar a la estructura, composición y funcionamiento de los ecosistemas de Sierra Nevada. 
   
 - Competenciales: Relacionados con la adquisición de competencias genéricas (SIG y R en este caso):
-  - 
+  - Practicar las funciones de SIG que permiten extrar datos de capas raster y asociar estadísticas de las mismas a capas poligonales.
 
 
 Los objetivos de aprendizaje anteriores se materializan en el siguiente objetivo operativo. Es decir, tienes que hacer esto:
 
-> 
+> Generar una tabla en la que a cada ecosistema de Sierra Nevada se le asignen valores promedio de: precipitación actual, temperatura actual, precipitación prevista en el futuro, temperatura prevista en el futuro y altitud
 
 
 
 ## Contextualización ecológica: áreas de distribución de especies (nicho ecológico) y distribución de ecosistemas.
 
+Las condiciones ambientales condicionan (valga la redundancia) las características de los ecosistemas. La disponibilidad de agua, nutrientes y la temperatura del medio permiten en diferentes grados la ocupación del espacio por seres vivos y por tanto por ecosistemas. Es obvio constatar esto. Por ejemplo, sabemos que para que en un lugar crezcan árboles enormes es necesario que haya un clima benigno y abundantes precipitaciones.
 
+Una montaña es un buen sitio en el que observar cómo el cambio en las condiciones abióticas modifica la capacidad del territorio de albergar diferentes formas de vida. A lo largo de nuestro recorrido por Sierra Nevada veremos cómo en los distintos climas, tipos de suelo y orientaciones hay distintos tipos de ecosistemas.
+
+Así, conocer las características abióticas del territorio es muy importante para entender la estructura y funcionamiento de los ecosistemas. Además, si esas condiciones cambian (como lo está haciendo el clima), podemos inferir de alguna forma la trayectoria de cambio que experimentarán los ecosistemas.
+
+Las condiciones ambientales no actúan de la misma forma sobre los ecosistemas. Normalmente lo que suele ocurrir es que el sistema en su conjunto funciona al ritmo al que le permite la variable ambiental que está presente con menos intensidad en el territorio. Esto se estudia en la denominada [ley del mínimo de Liebig.](https://es.wikipedia.org/wiki/Ley_del_m%C3%ADnimo_de_Liebig) 
 
 ## Flujo de trabajo
 
