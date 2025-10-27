@@ -29,7 +29,7 @@ Los objetivos de aprendizaje anteriores se materializan en el siguiente objetivo
 
 
 
-## Contextualización ecológica: áreas de distribución de especies (nicho ecológico) y distribución de ecosistemas.
+## Contextualización ecológica: influencia del contexto abiótico en los ecosistemas
 
 Las condiciones ambientales condicionan (valga la redundancia) las características de los ecosistemas. La disponibilidad de agua, nutrientes y la temperatura del medio permiten en diferentes grados la ocupación del espacio por seres vivos y por tanto por ecosistemas. Es obvio constatar esto. Por ejemplo, sabemos que para que en un lugar crezcan árboles enormes es necesario que haya un clima benigno y abundantes precipitaciones.
 
@@ -37,7 +37,17 @@ Una montaña es un buen sitio en el que observar cómo el cambio en las condicio
 
 Así, conocer las características abióticas del territorio es muy importante para entender la estructura y funcionamiento de los ecosistemas. Además, si esas condiciones cambian (como lo está haciendo el clima), podemos inferir de alguna forma la trayectoria de cambio que experimentarán los ecosistemas.
 
-Las condiciones ambientales no actúan de la misma forma sobre los ecosistemas. Normalmente lo que suele ocurrir es que el sistema en su conjunto funciona al ritmo al que le permite la variable ambiental que está presente con menos intensidad en el territorio. Esto se estudia en la denominada [ley del mínimo de Liebig.](https://es.wikipedia.org/wiki/Ley_del_m%C3%ADnimo_de_Liebig) 
+Las condiciones ambientales no actúan de la misma forma sobre los ecosistemas. Normalmente lo que suele ocurrir es que el sistema en su conjunto funciona al ritmo al que le permite la variable ambiental que está presente con menos intensidad en el territorio. Esto se estudia en la denominada [ley del mínimo de Liebig.](https://es.wikipedia.org/wiki/Ley_del_m%C3%ADnimo_de_Liebig) El siguiente dibujo ilustra muy bien esta idea
+
+
+
+![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/refs/heads/main/imagenes/liebig.png)
+
+El tonel de la figura almacenará tanta agua como lo permita la balda más corta. Siguiendo la analogía, un ecosistema funcionará al ritmo que le permita el condicionante abiótico que sea más limitante.
+
+En nuestra zona de estudio los limitantes varían en función de la altura. Con este ejercicio tendrás que identificar el contexto abiótico de cada ecosistema y también interpretar qué variable ambiental puede estar limitando en cada caso.
+
+
 
 ## Flujo de trabajo
 
