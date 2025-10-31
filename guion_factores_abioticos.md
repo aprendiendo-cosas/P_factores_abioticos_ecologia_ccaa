@@ -1,6 +1,6 @@
 
 
-# Uso de información de [GBIF](https://www.gbif.org/) para generar mapas de área de distribución de especies en Sierra Nevada
+# Caracterización de los factores abióticos de los ecosistemas de Sierra Nevada
 
 > + **_Tipo de material_**: <span style="display: inline-block; font-size: 12px; color: white; background-color: #4caf50; border-radius: 5px; padding: 5px; font-weight: bold;"> Prácticas</span> 
 > + **_Versión_**: 2025-2026
