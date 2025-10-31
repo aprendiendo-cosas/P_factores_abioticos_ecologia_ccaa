@@ -66,12 +66,11 @@ A continuación se describen los pasos que hay que dar para generar mapas de dis
 + **1.3** [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/temp_media_actual.tif) capa muestra la temperatura promedio en cada píxel de Sierra Nevada en un escenario climático histórico (1991-2020). Se ha obtenido a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/02_CARACTERIZACION_CLIMATICA/02_TEMPERATURA/01_TEMPERATURA/01_MEDIA/01_ANUAL/TEMP_MEDIA_ANUAL_1991_2020/InfGeografica/InfRaster/COG) proyecto de la REDIAM.
 + **1.4**. [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/temp_media_70_00.tif) capa muestra la temperatura media prevista para Sierra Nevada en de 2070 a 2100. Procede de combinar la anterior con [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM. 
 + **1.5.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/mde_snev.zip) puedes descargar un modelo digital de elevaciones de Sierra Nevada. Cada píxel de esta capa muestra su altura sobre el nivel del mar. Como puedes ver, está comprimido, así que tienes que descomprimirlo.
-+ **1.6** Por último, [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y aquí tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
++ **1.6** Por último, [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/bosque_ribera_dissolve.zip) tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
 
-### 2. Cargar las capas anteriores en R o en QGIS
+### 2. Cargar las capas anteriores en QGIS
 
 + **2.1.** Para cargarlas en QGIS solo tienes que arrastrarlas al proyecto que tengas abierto. Recuerda siempre guardar el proyecto en la misma carpeta donde tengas la capas. Esto facilitará el manejo del proyecto.
-+ **2.2.** Si quieres trabajar con R, basta con importar las capas usando la función `rast` del paquete `terra`.  Antes de esto recuerda indicar tu espacio de trabajo en el script de R usando la función `setwd()`. Lo anterior sirve para las capas raster. Para cargar la capa vectorial con la delimitación de los ecosistemas, usa la función `vect`  que está también en el paquete terra.
 
 ### 3 Asignar a cada tipo de ecosistema valores de las capas raster con las variables abióticas
 
@@ -79,16 +78,9 @@ A continuación se describen los pasos que hay que dar para generar mapas de dis
   + `Raster layer`: Señala aquí la capa de la que quieras extraer los datos. Por ejemplo el modelo digital de elevaciones.
   + `Output column prefix`: Te permite indicar el prefijo que tendrán las nuevas columnas que se creen en la tabla. Puedes dejar el guión bajo que aparece por defecto.
   + `Statistics to calculate`: Permite seleccionar las estadísticas que calculará QGIS. En realidad esta operación es una agrupación espacial. Así que QGIS sumará, contará, hará la media o la operación que le digamos para cada tipo diferente de ecosistema. En nuestro caso es interesante decir que calcule los valores: `mean` (media), y `st dev` (desviación típica, que nos permitirá saber cómo de dispersos están los datos)
+  + `save results`: Guarda el resultado en la misma carpeta en la que tengas los datos de entrada. Se generará un archivo con extensión `csv` que puedes abrir fácilmente con excel o con un editor de texto. 
 
 
-
-
-
-
-
-
-
-Cargar en QGIS o en R los datos de las variables abióticas
 
 
 ## Resultados esperados e interpretación ecológica
