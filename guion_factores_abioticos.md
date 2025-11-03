@@ -141,20 +141,15 @@ Para hacer esto, tienes que repetir el siguiente procedimiento tantas veces como
   + Activa la opción `Keep resolution of input layer` para que mantenga la resolución de la capa raster de entrada.
   + `Clipped (mask)`: Esta opción nos permite indicar dónde guardar la imagen creada y cómo llamarla. Guárdala en la carpeta donde tengas toda la información y dale un nombre que resulte de sumar el nombre de las capas originales (las de las variables abióticas) y el sufijo de tu tipo de ecosistema. Por ejemplo: `precip_media_actual_ribera.tif` para indicar que se trata de la capa de precipitación actual en los bosques de ribera.
 
-Deberás obtener mapas parecidos a este:
+Deberás obtener mapas parecidos a este que muestra cómo se distribuye la precipitación en la actualidad en los encinares de Sierra Nevada.
 
 
 
+![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/refs/heads/main/imagenes/precipitacion_ecosistema.png)
+
+La interpretación ecológica de este mapa consiste en caracterizar el patrón espacial observado en la variable en cuestión. También, si te animas puedes restar las capas que muestran la precipitación y temperatura del presente de las del futuro. Así podrás ver en un mapa las zonas en las que habrá más o menos cambio en la temperatura y en la precipitación. 
 
 
-
-
-
-
-
-## Resultados esperados e interpretación ecológica
-
-+ 
 
 
 
