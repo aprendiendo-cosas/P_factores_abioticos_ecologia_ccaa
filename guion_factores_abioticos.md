@@ -77,7 +77,8 @@ Describiré con menos detalle las cuestiones que ya habéis visto en la asignatu
 + **1.3** [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/temp_media_actual.tif) capa muestra la temperatura promedio en cada píxel de Sierra Nevada en un escenario climático histórico (1991-2020). Se ha obtenido a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/02_CARACTERIZACION_CLIMATICA/02_TEMPERATURA/01_TEMPERATURA/01_MEDIA/01_ANUAL/TEMP_MEDIA_ANUAL_1991_2020/InfGeografica/InfRaster/COG) proyecto de la REDIAM.
 + **1.4**. [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/temp_media_70_00.tif) capa muestra la temperatura media prevista para Sierra Nevada en de 2070 a 2100. Procede de combinar la anterior con [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM. 
 + **1.5.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/mde_snev.zip) puedes descargar un modelo digital de elevaciones de Sierra Nevada. Cada píxel de esta capa muestra su altura sobre el nivel del mar. Como puedes ver, está comprimido, así que tienes que descomprimirlo.
-+ **1.6** Por último, [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/bosque_ribera_dissolve.zip) tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
++ **1.6** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/bosque_ribera_dissolve.zip) tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
++ **1.7** Por último, te dejo [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/heads/main/geoinfo/pnatural_snevada.zip) la capa vectorial que delimita el espacio protegido de Sierra Nevada. Puedes usarlo para ponerlo como contorno en los mapas que generes.
 
 #### 2. Cargar las capas anteriores en QGIS
 
@@ -96,10 +97,10 @@ Describiré con menos detalle las cuestiones que ya habéis visto en la asignatu
   + `Statistics to calculate`: Permite seleccionar las estadísticas que calculará QGIS. En realidad esta operación es una agrupación espacial. Así que QGIS sumará, contará, hará la media o la operación que le digamos para cada tipo diferente de ecosistema. En nuestro caso es interesante decir que calcule los valores: `mean` (media), y `st dev` (desviación típica, que nos permitirá saber cómo de dispersos están los datos). Esto generará, para cada vez que lo ejecutes, una tabla con dos campos nuevos. Dependiendo de la variable con la que estés trabajando en cada caso, el nombre del campo resultará de combinar el prefijo anterior con `mean` o `stdev`. Quedaría algo así para la variable de la temperatura actual: `ta_mean` y `ta_stdev`. 
   + `save results`: Guarda el resultado en la misma carpeta en la que tengas los datos de entrada. Se generará un archivo con extensión `csv` que puedes abrir fácilmente con excel o con un editor de texto. Dale al archivo un nombre alineado a su contenido. Por ejemplo `precipitacion_actual_x_ecosistema.csv` en el caso de que estés trabajando con la capa de precipitación actual. 
 
-#### 4 Repetir lo anterior para cada variable abiótica
++ **3.2.** Repetir lo anterior para cada variable abiótica
+  + Necesitamos una tabla como la que obtendrás en el punto anterior para cada variable de las descargadas anteriormente. Así que, repite el proceso tantas veces como sea necesario.
+  + Al final de todo tendrás varias tablas en formato `csv`. Te recomiendo que las unas todas usando excel, por ejemplo. La idea es tener una única tabla con esta estructura (ojo, los datos numéricos de la tabla son aleatorios, no los uses. Tienes que hacer scroll horizontal para verla completa):
 
-+ **4.1** Necesitamos una tabla como la que obtendrás en el punto anterior para cada variable de las descargadas anteriormente. Así que, repite el proceso tantas veces como sea necesario.
-+ **4.2** Al final de todo tendrás varias tablas en formato `csv`. Te recomiendo que las unas todas usando excel, por ejemplo. La idea es tener una única tabla con esta estructura (ojo, los datos numéricos de la tabla son aleatorios, no los uses. Tienes que hacer scroll horizontal para verla completa):
 
 
 
@@ -117,6 +118,34 @@ Describiré con menos detalle las cuestiones que ya habéis visto en la asignatu
 | Pinares autóctonos de P. sylvestris              | 7956,790165 | 1014679,953 | 1172       | 4,707723127 | 1,284966339 | 9,375124 | 9,663029326 | 0,95544566  | 7,268674059 | 0,743568128 | 6,364350523 | 8,277224986 | 0,463278587 |
 | Borreguiles                                      | 4764,119297 | 65930,61979 | 891        | 1,859918195 | 1,403088638 | 0,094232 | 5,602709677 | 7,205931627 | 2,111744056 | 3,686192995 | 7,194936797 | 3,043538669 | 9,401508228 |
 | Matorral media montaña                           | 1768,617734 | 167534,1619 | 208        | 2,305119695 | 1,395373121 | 8,160462 | 4,576051731 | 1,708176984 | 6,955340855 | 6,213173687 | 8,447630413 | 7,528340731 | 9,466060239 |
+
++ Si has puesto todos los datos anteriores en excel, podrás hacer algunos cálculos sencillos para tratar de responder a las siguientes preguntas:
+  + ¿cómo de homogeneas son las variables anteriores dentro de tu ecosistema? Para esto tendrás que ver cómo de grandes son los valores del campo `stdev` porque este indicador estadístico nos da una idea de la dispersión de los datos. 
+  + Si restas los campos con el clima futuro de los del clima presente, verás el efecto previsto del cambio climático. ¿hay algún ecosistema que se "beneficie" del cambio climático? ¿cómo de mal o bienparado queda tu ecosistema al hacer este sencillo análisis?
+
+
+
+#### 4 Creación de mapas para mostrar la distribución de las variables anteriores dentro de tu ecosistema
+
+Además del resultado numérico anterior, es interesante crear mapas de las variables anteriores en las localidades ocupadas por tu ecosistema. De esta forma podrás analizar cómo cambia la temperatura dentro del ecosistema. Por ejemplo, podrás saber si los encinares del sur son más cálidos o fríos que los del norte.
+
+Para hacer esto, tienes que repetir el siguiente procedimiento tantas veces como variables hay (en total 5):
+
++ **4.1.** Carga todas las capas raster en un proyecto de QGIS. Seguramente te servirá el que ya estás usando de la parte anterior. No olvides cargar también el mapa de ecosistemas o el de distribución de bosques de ribera si ese es tu ecosistema.
++ **4.2.** Ahora seleccionamos con la herramienta de seleccionar elemento gráfico, nuestro ecosistema dentro de la capa de ecosistemas. Esto hará que el siguiente paso (recortar el raster con el polígono), se aplique únicamente al ecosistema que queremos. Si tu ecosistema es el bosque de ribera, no tendrás que hacer nada aquí.
++ **4.3** Abrimos en QGIS una herramienta llamada *clip raster by mask ayer*. Esto nos permite recortar una capa raster por los límites de una capa vectorial. En nuestro caso lo hará por los límites de un polígono que hemos seleccionado de la capa vectorial. Esta herramienta tiene muchas opciones. Nosotros debemos centrarnos solo en las siguientes:
+  + `target layer`: Es la capa raster que queremos recortar. En cada paso será una de las 5 que hemos descrito arriba.
+  + `mask layer`: Es la capa vectorial que contiene los polígonos que usaremos como molde. En nuestro caso es *ecosistemas_snev_dissolve* o *bosques_ribera_dissolve* dependiendo de cuál sea nuestro tipo de ecosistema. Si usamos la primera de las anteriores, no olvides activar la opción de `selected features only` para que haga la intersección solo con el ecosistema que has seleccionado en el paso anterior.
+  + `source CRS `y `target CRS` corresponden con los sistemas de coordenadas de la capa raster y vectorial implicadas. En ambos casos es `EPSG: 25830`. 
+  + Activa la opción `match the extent of the clipped raster to the extent of the mask layer` para que la capa resultante tenga la extensión de la capa recortada.
+  + Activa la opción `Keep resolution of input layer` para que mantenga la resolución de la capa raster de entrada.
+  + `Clipped (mask)`: Esta opción nos permite indicar dónde guardar la imagen creada y cómo llamarla. Guárdala en la carpeta donde tengas toda la información y dale un nombre que resulte de sumar el nombre de las capas originales (las de las variables abióticas) y el sufijo de tu tipo de ecosistema. Por ejemplo: `precip_media_actual_ribera.tif` para indicar que se trata de la capa de precipitación actual en los bosques de ribera.
+
+Deberás obtener mapas parecidos a este:
+
+
+
+
 
 
 
