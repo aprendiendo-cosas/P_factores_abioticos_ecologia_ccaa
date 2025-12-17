@@ -8,7 +8,7 @@
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **_Duración_**: Lo que haya durado esta sesión en la asignatura de SIG más una hora en casa 
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2025_2026/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2025-2026/imagenes/portada.png)
 
 
 
@@ -47,7 +47,7 @@ Las condiciones ambientales no actúan de la misma forma sobre los ecosistemas. 
 
 
 
-![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2025_2026/imagenes/liebig.png)
+![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2025-2026/imagenes/liebig.png)
 
 El tonel de la figura almacenará tanta agua como lo permita la balda más corta. Siguiendo la analogía, un ecosistema funcionará al ritmo que le permita el condicionante abiótico que sea más limitante.
 
@@ -72,13 +72,13 @@ Describiré con menos detalle las cuestiones que ya habéis visto en la asignatu
 
 #### **1. Descargar los datos que necesitamos**
 
-+ **1.1** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/precip_media_actual.tif) tienes una capa mostrando el promedio de la precipitación total en cada píxel de Sierra Nevada en unas condiciones climáticas históricas. Esta información procede de [este](https://figshare.com/articles/dataset/Spatial_distribution_of_annual_and_seasonal_precipitation_mm_in_Sierra_Nevada_and_surroundings_with_the_accumulated_means_resulting_from_interpolation_raster_format_/14208392/2) producto generado por el [Observatorio de seguimiento del cambio global en Sierra Nevada](https://obsnev.es/).  
-+ **1.2.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/precip_media_70_00.tif) puedes descargar una capa que contiene datos del promedio de la precipitación total prevista para Sierra Nevada de 2070 a 2100. Esta información se ha generado a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM en el que se simulan las condiciones climáticas de futuro. 
-+ **1.3** [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/temp_media_actual.tif) capa muestra la temperatura promedio en cada píxel de Sierra Nevada en un escenario climático histórico (1991-2020). Se ha obtenido a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/02_CARACTERIZACION_CLIMATICA/02_TEMPERATURA/01_TEMPERATURA/01_MEDIA/01_ANUAL/TEMP_MEDIA_ANUAL_1991_2020/InfGeografica/InfRaster/COG) proyecto de la REDIAM.
-+ **1.4**. [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/temp_media_70_00.tif) capa muestra la temperatura media prevista para Sierra Nevada en de 2070 a 2100. Procede de combinar la anterior con [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM. 
-+ **1.5.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/mde_snev.zip) puedes descargar un modelo digital de elevaciones de Sierra Nevada. Cada píxel de esta capa muestra su altura sobre el nivel del mar. Como puedes ver, está comprimido, así que tienes que descomprimirlo.
-+ **1.6** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/bosque_ribera_dissolve.zip) tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
-+ **1.7** Por último, te dejo [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025_2026/geoinfo/pnatural_snevada.zip) la capa vectorial que delimita el espacio protegido de Sierra Nevada. Puedes usarlo para ponerlo como contorno en los mapas que generes.
++ **1.1** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/precip_media_actual.tif) tienes una capa mostrando el promedio de la precipitación total en cada píxel de Sierra Nevada en unas condiciones climáticas históricas. Esta información procede de [este](https://figshare.com/articles/dataset/Spatial_distribution_of_annual_and_seasonal_precipitation_mm_in_Sierra_Nevada_and_surroundings_with_the_accumulated_means_resulting_from_interpolation_raster_format_/14208392/2) producto generado por el [Observatorio de seguimiento del cambio global en Sierra Nevada](https://obsnev.es/).  
++ **1.2.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/precip_media_70_00.tif) puedes descargar una capa que contiene datos del promedio de la precipitación total prevista para Sierra Nevada de 2070 a 2100. Esta información se ha generado a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM en el que se simulan las condiciones climáticas de futuro. 
++ **1.3** [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/temp_media_actual.tif) capa muestra la temperatura promedio en cada píxel de Sierra Nevada en un escenario climático histórico (1991-2020). Se ha obtenido a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/02_CARACTERIZACION_CLIMATICA/02_TEMPERATURA/01_TEMPERATURA/01_MEDIA/01_ANUAL/TEMP_MEDIA_ANUAL_1991_2020/InfGeografica/InfRaster/COG) proyecto de la REDIAM.
++ **1.4**. [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/temp_media_70_00.tif) capa muestra la temperatura media prevista para Sierra Nevada en de 2070 a 2100. Procede de combinar la anterior con [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM. 
++ **1.5.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/mde_snev.zip) puedes descargar un modelo digital de elevaciones de Sierra Nevada. Cada píxel de esta capa muestra su altura sobre el nivel del mar. Como puedes ver, está comprimido, así que tienes que descomprimirlo.
++ **1.6** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/bosque_ribera_dissolve.zip) tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
++ **1.7** Por último, te dejo [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/pnatural_snevada.zip) la capa vectorial que delimita el espacio protegido de Sierra Nevada. Puedes usarlo para ponerlo como contorno en los mapas que generes.
 
 #### 2. Cargar las capas anteriores en QGIS
 
@@ -145,7 +145,7 @@ Deberás obtener mapas parecidos a este que muestra cómo se distribuye la preci
 
 
 
-![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/refs/tags/2025_2026/imagenes/precipitacion_ecosistema.png)
+![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/refs/tags/2025-2026/imagenes/precipitacion_ecosistema.png)
 
 La interpretación ecológica de este mapa consiste en caracterizar el patrón espacial observado en la variable en cuestión. También, si te animas puedes restar las capas que muestran la precipitación y temperatura del presente de las del futuro. Así podrás ver en un mapa las zonas en las que habrá más o menos cambio en la temperatura y en la precipitación. 
 
@@ -155,10 +155,10 @@ La interpretación ecológica de este mapa consiste en caracterizar el patrón e
 
 ****
 
-[Aquí](https://github.com/aprendiendo-cosas/P_area_distribucion_especies_ecologia_sig_ccaa/archive/refs/tags/2025_2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
+[Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/archive/refs/tags/2025-2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
 
 ****
-Haz click [aquí](https://github.com/aprendiendo-cosas/P_area_distribucion_especies_ecologia_sig_ccaa/releases) para ver cómo ha cambiado este guión en los distintos cursos académicos.
+Haz click [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/releases) para ver cómo ha cambiado este guión en los distintos cursos académicos.
 
 ****
  <p xmlns:cc="http://creativecommons.org/ns#" >El contenido de este repositorio se puede utilizar bajo la siguiente licencia:  <a  href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"  target="_blank" rel="license noopener noreferrer"  style="display:inline-block;">CC BY-NC-SA 4.0<img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"  alt=""><img  style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"   src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"  alt=""></a></p> 
