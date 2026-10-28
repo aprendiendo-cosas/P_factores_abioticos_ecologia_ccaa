@@ -3,16 +3,16 @@
 # Caracterización de los factores abióticos de los ecosistemas de Sierra Nevada
 
 > + **_Tipo de material_**: <span style="display: inline-block; font-size: 12px; color: white; background-color: #4caf50; border-radius: 5px; padding: 5px; font-weight: bold;"> Prácticas</span> 
-> + **_Versión_**: 2025-2026
+> + **_Versión_**: 2026-2027
 > + **_Asignatura (grado)_**: Ecología (CCAA)
 > + **_Autor_**: Curro Bonet-García (fjbonet@uco.es)
 > + **_Duración_**: Lo que haya durado esta sesión en la asignatura de SIG más una hora en casa 
 
-![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2025-2026/imagenes/portada.png)
+![portada](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2026_2027/imagenes/portada.png)
 
+[TOC]
 
-
-## Objetivos
+## 1. Objetivos
 
 - Disciplinares para la asignatura de ecología:
   - Comprender en qué medida las condiciones abióticas (altitud, clima, orientación, etc.) condicionan la estructura y funcionamiento de los ecosistemas.
@@ -35,7 +35,7 @@ Los objetivos de aprendizaje anteriores se materializan en el siguiente objetivo
 
 
 
-## Contextualización ecológica: influencia del contexto abiótico en los ecosistemas
+## 2. Contextualización ecológica: influencia del contexto abiótico en los ecosistemas
 
 Las condiciones ambientales condicionan (valga la redundancia) las características de los ecosistemas. La disponibilidad de agua, nutrientes y la temperatura del medio permiten en diferentes grados la ocupación del espacio por seres vivos y por tanto por ecosistemas. Es obvio constatar esto. Por ejemplo, sabemos que para que en un lugar crezcan árboles enormes es necesario que haya un clima benigno y abundantes precipitaciones.
 
@@ -47,7 +47,7 @@ Las condiciones ambientales no actúan de la misma forma sobre los ecosistemas. 
 
 
 
-![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2025-2026/imagenes/liebig.png)
+![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/2026_2027/imagenes/liebig.png)
 
 El tonel de la figura almacenará tanta agua como lo permita la balda más corta. Siguiendo la analogía, un ecosistema funcionará al ritmo que le permita el condicionante abiótico que sea más limitante.
 
@@ -55,7 +55,7 @@ En nuestra zona de estudio los limitantes varían en función de la altura. Con 
 
 
 
-## Flujo de trabajo
+## 3. Flujo de trabajo
 
 A continuación se describen los pasos que hay que dar para generar dos tipos de resultados:
 
@@ -66,27 +66,27 @@ Describiré con menos detalle las cuestiones que ya habéis visto en la asignatu
 
 
 
-### Creación de una tabla con los valores promedio de las variables abióticas en cada tipo de ecosistema
+### 4. Creación de una tabla con los valores promedio de las variables abióticas en cada tipo de ecosistema
 
 
 
-#### **1. Descargar los datos que necesitamos**
+#### **4.1. Descargar los datos que necesitamos**
 
-+ **1.1** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/precip_media_actual.tif) tienes una capa mostrando el promedio de la precipitación total en cada píxel de Sierra Nevada en unas condiciones climáticas históricas. Esta información procede de [este](https://figshare.com/articles/dataset/Spatial_distribution_of_annual_and_seasonal_precipitation_mm_in_Sierra_Nevada_and_surroundings_with_the_accumulated_means_resulting_from_interpolation_raster_format_/14208392/2) producto generado por el [Observatorio de seguimiento del cambio global en Sierra Nevada](https://obsnev.es/).  
-+ **1.2.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/precip_media_70_00.tif) puedes descargar una capa que contiene datos del promedio de la precipitación total prevista para Sierra Nevada de 2070 a 2100. Esta información se ha generado a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM en el que se simulan las condiciones climáticas de futuro. 
-+ **1.3** [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/temp_media_actual.tif) capa muestra la temperatura promedio en cada píxel de Sierra Nevada en un escenario climático histórico (1991-2020). Se ha obtenido a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/02_CARACTERIZACION_CLIMATICA/02_TEMPERATURA/01_TEMPERATURA/01_MEDIA/01_ANUAL/TEMP_MEDIA_ANUAL_1991_2020/InfGeografica/InfRaster/COG) proyecto de la REDIAM.
-+ **1.4**. [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/temp_media_70_00.tif) capa muestra la temperatura media prevista para Sierra Nevada en de 2070 a 2100. Procede de combinar la anterior con [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM. 
-+ **1.5.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/mde_snev.zip) puedes descargar un modelo digital de elevaciones de Sierra Nevada. Cada píxel de esta capa muestra su altura sobre el nivel del mar. Como puedes ver, está comprimido, así que tienes que descomprimirlo.
-+ **1.6** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/bosque_ribera_dissolve.zip) tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
-+ **1.7** Por último, te dejo [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2025-2026/geoinfo/pnatural_snevada.zip) la capa vectorial que delimita el espacio protegido de Sierra Nevada. Puedes usarlo para ponerlo como contorno en los mapas que generes.
++ **4.1.1** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/precip_media_actual.tif) tienes una capa mostrando el promedio de la precipitación total en cada píxel de Sierra Nevada en unas condiciones climáticas históricas. Esta información procede de [este](https://figshare.com/articles/dataset/Spatial_distribution_of_annual_and_seasonal_precipitation_mm_in_Sierra_Nevada_and_surroundings_with_the_accumulated_means_resulting_from_interpolation_raster_format_/14208392/2) producto generado por el [Observatorio de seguimiento del cambio global en Sierra Nevada](https://obsnev.es/).  
++ **4.1.2.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/precip_media_70_00.tif) puedes descargar una capa que contiene datos del promedio de la precipitación total prevista para Sierra Nevada de 2070 a 2100. Esta información se ha generado a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM en el que se simulan las condiciones climáticas de futuro. 
++ **4.1.3** [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/temp_media_actual.tif) capa muestra la temperatura promedio en cada píxel de Sierra Nevada en un escenario climático histórico (1991-2020). Se ha obtenido a partir de [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/02_CARACTERIZACION_CLIMATICA/02_TEMPERATURA/01_TEMPERATURA/01_MEDIA/01_ANUAL/TEMP_MEDIA_ANUAL_1991_2020/InfGeografica/InfRaster/COG) proyecto de la REDIAM.
++ **4.1.4**. [Esta](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/temp_media_70_00.tif) capa muestra la temperatura media prevista para Sierra Nevada en de 2070 a 2100. Procede de combinar la anterior con [este](https://portalrediam.cica.es/descargas/index.php/s/mxHMWXyHfrCxyNK?dir=/04_RECURSOS_NATURALES/03_CLIMA/03_CAMBIO_CLIMATICO/03_PRECIPITACION/06_TREINTENA/ESC_PRECIP_MEDIAS_TREINTENA_2000_2100/InfGeografica/InfRaster/TIFF) proyecto de la REDIAM. 
++ **4.1.5.** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/mde_snev.zip) puedes descargar un modelo digital de elevaciones de Sierra Nevada. Cada píxel de esta capa muestra su altura sobre el nivel del mar. Como puedes ver, está comprimido, así que tienes que descomprimirlo.
++ **4.1.6** [Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/ecosistemas_snev_dissolve.zip) puedes bajar la capa con la distribución de los ecosistemas de Sierra Nevada. Y [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/bosque_ribera_dissolve.zip) tienes el mapa de distribución de los bosques de ribera, que no aparecen en el mapa anterior. 
++ **4.1.7** Por último, te dejo [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/raw/refs/tags/2026_2027/geoinfo/pnatural_snevada.zip) la capa vectorial que delimita el espacio protegido de Sierra Nevada. Puedes usarlo para ponerlo como contorno en los mapas que generes.
 
-#### 2. Cargar las capas anteriores en QGIS
+#### 4.2. Cargar las capas anteriores en QGIS
 
-+ **2.1.** Para cargarlas en QGIS solo tienes que arrastrarlas al proyecto que tengas abierto. Recuerda siempre guardar el proyecto en la misma carpeta donde tengas la capas. Esto facilitará el manejo del proyecto.
++ **4.2.1.** Para cargarlas en QGIS solo tienes que arrastrarlas al proyecto que tengas abierto. Recuerda siempre guardar el proyecto en la misma carpeta donde tengas la capas. Esto facilitará el manejo del proyecto.
 
-#### 3 Asignar a cada tipo de ecosistema valores de las capas raster con las variables abióticas
+#### 4.3 Asignar a cada tipo de ecosistema valores de las capas raster con las variables abióticas
 
-+ **3.1.** Para hacer esto en Qgis tendrás que usar una herramienta llamada `Zonal statistics`. Podrás encontrarla en el menú de procesamientos. Para usar esta herramienta necesitas indicar lo siguiente (ten en cuenta que dependiendo de la versión de QGIS que estés usando, las opciones siguientes pueden tener nombres diferentes):
++ **4.3.1.** Para hacer esto en Qgis tendrás que usar una herramienta llamada `Zonal statistics`. Podrás encontrarla en el menú de procesamientos. Para usar esta herramienta necesitas indicar lo siguiente (ten en cuenta que dependiendo de la versión de QGIS que estés usando, las opciones siguientes pueden tener nombres diferentes):
   + `Raster layer`: Señala aquí la capa de la que quieras extraer los datos. Por ejemplo el modelo digital de elevaciones.
   + `Output column prefix`: Te permite indicar el prefijo que tendrán las nuevas columnas que se creen en la tabla. Sugiero que pongas un prefijo que identifique a la variable con la que estás trabajando. Como tienes que repetir este proceso para cada una de las capas descargadas en el punto 1, es necesario buscar una forma de identificar bien cada uno de los campos creados. Debe de ser un nombre con solo 3 caracteres. Por ejemplo:
     + `ta_` para temperatura actual
@@ -97,7 +97,7 @@ Describiré con menos detalle las cuestiones que ya habéis visto en la asignatu
   + `Statistics to calculate`: Permite seleccionar las estadísticas que calculará QGIS. En realidad esta operación es una agrupación espacial. Así que QGIS sumará, contará, hará la media o la operación que le digamos para cada tipo diferente de ecosistema. En nuestro caso es interesante decir que calcule los valores: `mean` (media), y `st dev` (desviación típica, que nos permitirá saber cómo de dispersos están los datos). Esto generará, para cada vez que lo ejecutes, una tabla con dos campos nuevos. Dependiendo de la variable con la que estés trabajando en cada caso, el nombre del campo resultará de combinar el prefijo anterior con `mean` o `stdev`. Quedaría algo así para la variable de la temperatura actual: `ta_mean` y `ta_stdev`. 
   + `save results`: Guarda el resultado en la misma carpeta en la que tengas los datos de entrada. Se generará un archivo con extensión `csv` que puedes abrir fácilmente con excel o con un editor de texto. Dale al archivo un nombre alineado a su contenido. Por ejemplo `precipitacion_actual_x_ecosistema.csv` en el caso de que estés trabajando con la capa de precipitación actual. 
 
-+ **3.2.** Repetir lo anterior para cada variable abiótica
++ **4.3.2.** Repetir lo anterior para cada variable abiótica
   + Necesitamos una tabla como la que obtendrás en el punto anterior para cada variable de las descargadas anteriormente. Así que, repite el proceso tantas veces como sea necesario.
   + Al final de todo tendrás varias tablas en formato `csv`. Te recomiendo que las unas todas usando excel, por ejemplo. La idea es tener una única tabla con esta estructura (ojo, los datos numéricos de la tabla son aleatorios, no los uses. Tienes que hacer scroll horizontal para verla completa):
 
@@ -125,15 +125,15 @@ Describiré con menos detalle las cuestiones que ya habéis visto en la asignatu
 
 
 
-#### 4 Creación de mapas para mostrar la distribución de las variables anteriores dentro de tu ecosistema
+#### 4.4 Creación de mapas para mostrar la distribución de las variables anteriores dentro de tu ecosistema
 
 Además del resultado numérico anterior, es interesante crear mapas de las variables anteriores en las localidades ocupadas por tu ecosistema. De esta forma podrás analizar cómo cambia la temperatura dentro del ecosistema. Por ejemplo, podrás saber si los encinares del sur son más cálidos o fríos que los del norte.
 
 Para hacer esto, tienes que repetir el siguiente procedimiento tantas veces como variables hay (en total 5):
 
-+ **4.1.** Carga todas las capas raster en un proyecto de QGIS. Seguramente te servirá el que ya estás usando de la parte anterior. No olvides cargar también el mapa de ecosistemas o el de distribución de bosques de ribera si ese es tu ecosistema.
-+ **4.2.** Ahora seleccionamos con la herramienta de seleccionar elemento gráfico, nuestro ecosistema dentro de la capa de ecosistemas. Esto hará que el siguiente paso (recortar el raster con el polígono), se aplique únicamente al ecosistema que queremos. Si tu ecosistema es el bosque de ribera, no tendrás que hacer nada aquí.
-+ **4.3** Abrimos en QGIS una herramienta llamada *clip raster by mask ayer*. Esto nos permite recortar una capa raster por los límites de una capa vectorial. En nuestro caso lo hará por los límites de un polígono que hemos seleccionado de la capa vectorial. Esta herramienta tiene muchas opciones. Nosotros debemos centrarnos solo en las siguientes:
++ **4.4.1.** Carga todas las capas raster en un proyecto de QGIS. Seguramente te servirá el que ya estás usando de la parte anterior. No olvides cargar también el mapa de ecosistemas o el de distribución de bosques de ribera si ese es tu ecosistema.
++ **4.4.2.** Ahora seleccionamos con la herramienta de seleccionar elemento gráfico, nuestro ecosistema dentro de la capa de ecosistemas. Esto hará que el siguiente paso (recortar el raster con el polígono), se aplique únicamente al ecosistema que queremos. Si tu ecosistema es el bosque de ribera, no tendrás que hacer nada aquí. También puedes hacer la selección de tu ecosistema usando la herramienta de QGIS que permite seleccionar en virtud del contenido de un campo. 
++ **4.4.3** Abrimos en QGIS una herramienta llamada *clip raster by mask ayer*. Esto nos permite recortar una capa raster por los límites de una capa vectorial. En nuestro caso lo hará por los límites de un polígono que hemos seleccionado de la capa vectorial. Esta herramienta tiene muchas opciones. Nosotros debemos centrarnos solo en las siguientes:
   + `target layer`: Es la capa raster que queremos recortar. En cada paso será una de las 5 que hemos descrito arriba.
   + `mask layer`: Es la capa vectorial que contiene los polígonos que usaremos como molde. En nuestro caso es *ecosistemas_snev_dissolve* o *bosques_ribera_dissolve* dependiendo de cuál sea nuestro tipo de ecosistema. Si usamos la primera de las anteriores, no olvides activar la opción de `selected features only` para que haga la intersección solo con el ecosistema que has seleccionado en el paso anterior.
   + `source CRS `y `target CRS` corresponden con los sistemas de coordenadas de la capa raster y vectorial implicadas. En ambos casos es `EPSG: 25830`. 
@@ -145,7 +145,7 @@ Deberás obtener mapas parecidos a este que muestra cómo se distribuye la preci
 
 
 
-![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/refs/tags/2025-2026/imagenes/precipitacion_ecosistema.png)
+![liebig](https://raw.githubusercontent.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/refs/tags/2026_2027/imagenes/precipitacion_ecosistema.png)
 
 La interpretación ecológica de este mapa consiste en caracterizar el patrón espacial observado en la variable en cuestión. También, si te animas puedes restar las capas que muestran la precipitación y temperatura del presente de las del futuro. Así podrás ver en un mapa las zonas en las que habrá más o menos cambio en la temperatura y en la precipitación. 
 
@@ -155,7 +155,7 @@ La interpretación ecológica de este mapa consiste en caracterizar el patrón e
 
 ****
 
-[Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/archive/refs/tags/2025-2026.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
+[Aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/archive/refs/tags/2026_2027.zip) puedes descargar un archivo .zip que contiene este guión en formato html y todo el material que incluye.
 
 ****
 Haz click [aquí](https://github.com/aprendiendo-cosas/P_factores_abioticos_ecologia_ccaa/releases) para ver cómo ha cambiado este guión en los distintos cursos académicos.
